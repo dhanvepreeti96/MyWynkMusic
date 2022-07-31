@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wynk Music</title>
+    <link rel="stylesheet" href="css/wynk.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="./Images/wynk.png" alt="wynk">Wynk</li>
+            <li>Home</li>
+            <li>Podcast</li>
+        </ul>
+    </nav>
+    <div class="container">
+            <h1>Your Personalize Mixes</h1>
+            <div class="Mtext">
+                <marquee width="80%" direction="right" height="100px" id="marq">
+                    BoB_ft_Bruno_Mars_-_Nothin_On_You
+                </marquee>
+                <div class="image">
+                </div>
+            </div>            
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="mybar" value="0" min="0" max="100">
+        <div class="icons" >
+    
+            <button id="backBTN" >&#9194;</button>
+            <button id="playBTN" onclick="PlayPause()">&#9658;</button>
+            <button id="forwBTN">&#9193;</button>
+        </div>
+        <div>
+            <audio id="audio">
+                <source src="./Music/Nothin_On_You.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="songInfo">
+            <img src="./Images/musicgif.gif" alt="wynk" id="gifImage"><span id="text">BoB_ft_Bruno_Mars_-_Nothin_On_You</span>
+        </div>
+    </div>
+    <script src="./js/wynk.js"></script>
+</body>
+</html>
+ 
+ 
